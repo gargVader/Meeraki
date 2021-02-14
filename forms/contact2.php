@@ -14,7 +14,4 @@
         mail($mailTo, $subject, $txt, $headers);
         header("location:index.html");
 
-        
-
-
 ?> 
