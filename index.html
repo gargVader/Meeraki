@@ -477,7 +477,7 @@
 
           <div class="col-lg-6">
 
-            <form action="forms/contact2.php" method="post" class="php-email-form-custom">
+            <form action="POST" data-netlify="true">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -495,11 +495,19 @@
                 <div class="col-md-12">
                   <textarea class="form-control" name="message" rows="6" placeholder="Message" required></textarea>
                 </div>
+                
+                <div class="col-md-12">
+                  <input type="file" name="myfile" id="myfile" placeholder="Upload File" rows="6">
+                </div>
+                
+                <div class="col-md-12">
+                  <div data-netlify-recaptcha="true" rows="6"></div>
+                </div>
 
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
+                  <!-- <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div> -->
 
                   <button type="submit" name="submit">Send Message</button>
                 </div>
