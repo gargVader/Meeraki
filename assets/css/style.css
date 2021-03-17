@@ -34,6 +34,14 @@ Dark Blue: #1B1C26
   scroll-behavior: smooth;
 }
 
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 body {
   /* font-family: "Open Sans", sans-serif; */
   font-family: 'My custom font';
